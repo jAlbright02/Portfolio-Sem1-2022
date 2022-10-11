@@ -5,7 +5,23 @@ public class Calc
 {
     public static void main(String[] args)
     {
+        substract();
         multiply();
+    }
+
+    public static void substract()
+    {
+        System.out.print("Please enter your first number: ");
+        Scanner inputs = new Scanner(System.in);
+        int firstNum = inputs.nextInt();
+
+        System.out.print("Please enter your second number: ");
+        int secondNum = inputs.nextInt();
+        
+        int subtractionResult = firstNum - secondNum;
+        System.out.println("The total is " + subtractionResult);
+
+        
     }
 
     public static void multiply()
@@ -23,7 +39,5 @@ public class Calc
 
         //prints total
         System.out.println("Your total is " + totalSum);
-
-
     }
 }
