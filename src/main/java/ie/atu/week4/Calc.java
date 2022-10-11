@@ -5,8 +5,26 @@ public class Calc
 {
     public static void main(String[] args)
     {
+        add();
         substract();
         multiply();
+    }
+    
+    public static void add()
+    {
+        //ASK USER TO INPUT NUMBER
+        System.out.println("Enter first number: ");
+        Scanner input = new Scanner(System.in);     //create scanner
+        int num_first = input.nextInt();
+
+        //ASK USER FOR SECOND NUMBER
+        System.out.println("Enter second number: ");
+        int num_second = input.nextInt();
+
+        //PRINTS CALCULATION
+        int sum = num_first + num_second;
+        System.out.println("The Sum is: " + sum);
+        
     }
 
     public static void substract()
@@ -19,9 +37,7 @@ public class Calc
         int secondNum = inputs.nextInt();
         
         int subtractionResult = firstNum - secondNum;
-        System.out.println("The total is " + subtractionResult);
-
-        
+        System.out.println("The total is " + subtractionResult);        
     }
 
     public static void multiply()
@@ -40,4 +56,5 @@ public class Calc
         //prints total
         System.out.println("Your total is " + totalSum);
     }
+
 }
