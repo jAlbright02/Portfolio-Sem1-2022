@@ -29,7 +29,9 @@ public class Shape {
         shapeRect2.setWidth(width2);
         System.out.println("You entered : " + shapeRect2.getWidth());
 
-
+        Rectangle shapeRect3 = new Rectangle(45.0, 67.0);
+        System.out.println("You entered for width: " + shapeRect3.getWidth());
+        System.out.println("You entered for length: " + shapeRect3.getLength());
 
     }
 }
