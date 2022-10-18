@@ -6,5 +6,27 @@ public class Student
     private String emailStudent;
     private String courseStudent;
 
+    public String getNameStudent() {
+        return nameStudent;
+    }
 
+    public void setNameStudent(String nameStudent) {
+        this.nameStudent = nameStudent;
+    }
+
+    public String getEmailStudent() {
+        return emailStudent;
+    }
+
+    public void setEmailStudent(String emailStudent) {
+        this.emailStudent = emailStudent;
+    }
+
+    public String getCourseStudent() {
+        return courseStudent;
+    }
+
+    public void setCourseStudent(String courseStudent) {
+        this.courseStudent = courseStudent;
+    }
 }
