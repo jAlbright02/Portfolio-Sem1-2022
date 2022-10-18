@@ -6,7 +6,7 @@ public class StudentInfo {
     public static void main(String[] args) {
 
         //first instance of student
-        //retieve all info through getters and setters
+        //retrieve all info through getters and setters
         System.out.println("Please enter first student's name:");
         Scanner studentInput = new Scanner(System.in);
         Student infoStudent = new Student();
@@ -29,11 +29,11 @@ public class StudentInfo {
 
         System.out.println("Please enter second student's email:");
         String studentEmail2 = studentInput.nextLine();
-        infoStudent.setEmailStudent(studentEmail2);
+        infoStudent2.setEmailStudent(studentEmail2);
 
         System.out.println("Please enter second student's course:");
         String studentCourse2 = studentInput.nextLine();
-        infoStudent.setCourseStudent(studentCourse2);
+        infoStudent2.setCourseStudent(studentCourse2);
 
         //third instance of student
         //retrieve everything with constructors
@@ -49,9 +49,9 @@ public class StudentInfo {
         Student infoStudent3 = new Student(studentName3, studentEmail3, studentCourse3);
 
         //display all student information
-        System.out.printf("\nStudent One\nName: %s\nEmail: %s\nCourse: %s\n", studentName, studentEmail, studentCourse);
-        System.out.printf("\nStudent Two\nName: %s\nEmail: %s\nCourse: %s\n", studentName2, studentEmail2, studentCourse2);
-        System.out.printf("\nStudent Three\nName: %s\nEmail: %s\nCourse: %s\n", studentName3, studentEmail3, studentCourse3);
+        System.out.printf("\nStudent One\nName: %s\nEmail: %s\nCourse: %s\n", infoStudent.getNameStudent(), infoStudent.getEmailStudent(), infoStudent.getCourseStudent());
+        System.out.printf("\nStudent Two\nName: %s\nEmail: %s\nCourse: %s\n", infoStudent2.getNameStudent(), infoStudent2.getEmailStudent(), infoStudent2.getCourseStudent());
+        System.out.printf("\nStudent Three\nName: %s\nEmail: %s\nCourse: %s\n", infoStudent3.getNameStudent(), infoStudent3.getEmailStudent(), infoStudent3.getCourseStudent());
 
     }
 }
