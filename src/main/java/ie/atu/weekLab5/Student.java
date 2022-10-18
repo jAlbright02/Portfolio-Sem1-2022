@@ -14,6 +14,12 @@ public class Student
         this.nameStudent = nameStudent;
     }
 
+    public Student(String nameStudent, String emailStudent, String courseStudent) {
+        this.nameStudent = nameStudent;
+        this.emailStudent = emailStudent;
+        this.courseStudent = courseStudent;
+    }
+
     public String getNameStudent() {
         return nameStudent;
     }

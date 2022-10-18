@@ -39,5 +39,20 @@ public class StudentInfo {
 
         System.out.printf("Name: %s\nEmail: %s\nCourse: %s\n", studentName2, studentEmail2, studentCourse2);
 
+        //third instance of student
+        //retrieve everything with constructors
+        System.out.println("Please enter third student's name:");
+        String studentName3 = studentInput.nextLine();
+
+        System.out.println("Please enter third student's email:");
+        String studentEmail3 = studentInput.nextLine();
+
+        System.out.println("Please enter third student's course:");
+        String studentCourse3 = studentInput.nextLine();
+
+        Student infoStudent3 = new Student(studentName3, studentEmail3, studentCourse3);
+
+        System.out.printf("Name: %s\nEmail: %s\nCourse: %s\n", studentName3, studentEmail3, studentCourse3);
+
     }
 }
