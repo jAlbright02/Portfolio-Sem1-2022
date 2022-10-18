@@ -6,6 +6,14 @@ public class Student
     private String emailStudent;
     private String courseStudent;
 
+    public Student(){
+        this.nameStudent = "";
+    }
+
+    public Student(String nameStudent) {
+        this.nameStudent = nameStudent;
+    }
+
     public String getNameStudent() {
         return nameStudent;
     }
