@@ -21,8 +21,6 @@ public class StudentInfo {
         String studentCourse = studentInput.nextLine();
         infoStudent.setCourseStudent(studentCourse);
 
-        System.out.printf("Name: %s\nEmail: %s\nCourse: %s\n", studentName, studentEmail, studentCourse);
-
         //second instance of student
         //retrieve name with constructor and the rest with getters and setters
         System.out.println("Please enter second student's name:");
@@ -37,8 +35,6 @@ public class StudentInfo {
         String studentCourse2 = studentInput.nextLine();
         infoStudent.setCourseStudent(studentCourse2);
 
-        System.out.printf("Name: %s\nEmail: %s\nCourse: %s\n", studentName2, studentEmail2, studentCourse2);
-
         //third instance of student
         //retrieve everything with constructors
         System.out.println("Please enter third student's name:");
@@ -52,7 +48,10 @@ public class StudentInfo {
 
         Student infoStudent3 = new Student(studentName3, studentEmail3, studentCourse3);
 
-        System.out.printf("Name: %s\nEmail: %s\nCourse: %s\n", studentName3, studentEmail3, studentCourse3);
+        //display all student information
+        System.out.printf("\nStudent One\nName: %s\nEmail: %s\nCourse: %s\n", studentName, studentEmail, studentCourse);
+        System.out.printf("\nStudent Two\nName: %s\nEmail: %s\nCourse: %s\n", studentName2, studentEmail2, studentCourse2);
+        System.out.printf("\nStudent Three\nName: %s\nEmail: %s\nCourse: %s\n", studentName3, studentEmail3, studentCourse3);
 
     }
 }
