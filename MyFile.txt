@@ -1,2 +1,3 @@
-This is a new file. Hello and goodbye.
-Adding more text. yada yada yada.
+This is a formatted line using the PrintWriter class.
+12.65786
+false
