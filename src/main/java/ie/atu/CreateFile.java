@@ -1,29 +1,31 @@
 package ie.atu;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class CreateFile
 {
     public static void main(String[] args)
     {
+        //prompt user to input a file name and use scanner to read it
+        System.out.println("Please enter a filename you want to access: ");
+        Scanner sc = new Scanner(System.in);
+        String filename = sc.nextLine();
 
-
-        //created an instance File
-        File myFile = new File("MyFile.txt");
-        System.out.println("My file is located at: " + myFile.getAbsolutePath());
-        System.out.println("My file length: " + myFile.length());
-        System.out.println("My file exists: " + myFile.exists());
-        System.out.println("My file was last edited: " + myFile.lastModified());
 
         try
         {
-            //created an instance of PrintWriter
-            PrintWriter formatFile = new PrintWriter(myFile);
-            formatFile.println("This is a formatted line using the PrintWriter class.");
-            formatFile.println(12.65786);
-            formatFile.println(false);
+            //use scanner to read the file by reading one line
+            //then checking if there's another, when there is no more it stops
+            Scanner userFile = new Scanner(new File(filename));
 
-            formatFile.close();
+            while(userFile.hasNext())
+            {
+                String fileText = userFile.nextLine();
+                System.out.println(fileText);
+            }
+
+            userFile.close();
 
         }
         catch (IOException e)
