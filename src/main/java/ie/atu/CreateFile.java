@@ -2,8 +2,10 @@ package ie.atu;
 
 import java.io.*;
 
-public class CreateFile {
-    public static void main(String[] args) {
+public class CreateFile
+{
+    public static void main(String[] args)
+    {
 
 
         //created an instance myFile
@@ -13,6 +15,16 @@ public class CreateFile {
         System.out.println("My file exists: " + myFile.exists());
         System.out.println("My file was last edited: " + myFile.lastModified());
 
+        try
+        {
+            FileWriter outputFile = new FileWriter(myFile, true);
+            outputFile.write("This is a new file. Hello and goodbye.\n");
+            outputFile.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
     }
 }
