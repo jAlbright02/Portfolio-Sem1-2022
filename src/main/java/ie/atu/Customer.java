@@ -22,7 +22,7 @@ public class Customer extends Person{
         this.customerNumber = customerNumber;
     }
 
-    public boolean isMailingList() {
+    public boolean getMailingList() {
         return mailingList;
     }
 
