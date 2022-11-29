@@ -15,6 +15,18 @@ public class Person {
         this.phonePerson = phonePerson;
     }
 
+    public String getNamePerson() {
+        return namePerson;
+    }
+
+    public String getAddressPerson() {
+        return addressPerson;
+    }
+
+    public String getPhonePerson() {
+        return phonePerson;
+    }
+
     public void setNamePerson(String namePerson) {
         this.namePerson = namePerson;
     }
@@ -27,15 +39,12 @@ public class Person {
         this.phonePerson = phonePerson;
     }
 
-    public String getNamePerson() {
-        return namePerson;
-    }
-
-    public String getAddressPerson() {
-        return addressPerson;
-    }
-
-    public String getPhonePerson() {
-        return phonePerson;
+    @Override
+    public String toString() {
+        return "Person{" +
+                "namePerson='" + namePerson + '\'' +
+                ", addressPerson='" + addressPerson + '\'' +
+                ", phonePerson='" + phonePerson + '\'' +
+                '}';
     }
 }
