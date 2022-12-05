@@ -13,6 +13,19 @@ public class Test {
         System.out.println(Part1.getCustomerNum());
         System.out.println(Part1.getMailingList());
 
+        Customer Part2 = new Customer();
+
+        Part2.setName("Jim");
+        Part2.setAddress("Mayo");
+        Part2.setNumber("0871234567");
+        Part2.setCustomerNum("10b");
+        Part2.setMailingList(false);
+
+        System.out.println(Part2.getName());
+        System.out.println(Part2.getAddress());
+        System.out.println(Part2.getNumber());
+        System.out.println(Part2.getCustomerNum());
+        System.out.println(Part2.getMailingList());
 
     }
 

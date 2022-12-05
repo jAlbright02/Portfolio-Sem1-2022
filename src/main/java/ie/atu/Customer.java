@@ -7,7 +7,7 @@ public class Customer extends Person{
     private Boolean mailingList;
 
 
-    public Customer(String customerNum, Boolean mailingList) {
+    public Customer() {
 
     }
 
