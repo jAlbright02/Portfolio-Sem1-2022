@@ -39,4 +39,9 @@ public class Person {
     public void setNumber(String number) {
         this.number = number;
     }
+
+    public String toString() {
+        return "Name: " + name + "\nAddress: " + address + "\nNumber: " + number;
+    }
+
 }
