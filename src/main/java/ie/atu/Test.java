@@ -27,6 +27,13 @@ public class Test {
         System.out.println(Part2.getCustomerNum());
         System.out.println(Part2.getMailingList());
 
+        PreferredCustomer Part3 = new PreferredCustomer(1350);
+
+        Part3.customerDiscount(Part3.getPurchaseAmount());
+
+        System.out.println(Part3.toString());
+
+
     }
 
 
